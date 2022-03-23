@@ -118,6 +118,4 @@
             (at end (object_at ?o ?loc))
         )
     )
-
-
 )

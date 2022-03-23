@@ -73,7 +73,15 @@
 )
     (:goal 
         (and
-            (object_at object1 Room8)
+            ;(object_at object1 Room8)
+            (robot_at robot Room1)
+            (robot_at robot Room2)
+            (robot_at robot Room3)
+            (robot_at robot Room4)
+            (robot_at robot Room5)
+            (robot_at robot Room6)
+            (robot_at robot Room7)
+            (robot_at robot Room8)
         )
     )
 )
