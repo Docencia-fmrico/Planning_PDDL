@@ -1,6 +1,7 @@
 (define 
     (problem hotel0)
     (:domain hotel-domain)
+    (:requirements :negative-preconditions)
 
 (:objects
     robot - robot
@@ -14,7 +15,6 @@
     open_door1 open_door2 - door
     zone_door1 zone_door2 zone_door3 zone_door4 zone_door5 - door
     elevator1 - elevator
-
 )
 
 (:init
@@ -57,13 +57,13 @@
     (opened_door zone_door5)
 
     ;---open doors
-    (opened_door door1)
-    (opened_door door2)
-    (opened_door door3)
-    (opened_door door4)
-    (opened_door door5)
-    (opened_door door6)
-    (opened_door door7)
+    ;(opened_door door1)
+    ;(opened_door door2)
+    ;(opened_door door3)
+    ;(opened_door door4)
+    ;(opened_door door5)
+    ;(opened_door door6)
+    ;(opened_door door7)
 
     (elevator_joins elevator1 Corridor1 Corridor2)
     (elevator_joins elevator1 Corridor2 Corridor1)

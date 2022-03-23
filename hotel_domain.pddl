@@ -3,7 +3,6 @@
 
     ;;TODO:
         ;; Tests
-        ;; Los ascensores clonan robots?????
 
     (:types robot object location door elevator)
     (:predicates
