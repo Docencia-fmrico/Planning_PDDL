@@ -57,13 +57,13 @@
     (opened_door zone_door5)
 
     ;---open doors
-    ;(opened_door door1)
-    ;(opened_door door2)
-    ;(opened_door door3)
-    ;(opened_door door4)
-    ;(opened_door door5)
-    ;(opened_door door6)
-    ;(opened_door door7)
+    (opened_door door1)
+    (opened_door door2)
+    (opened_door door3)
+    (opened_door door4)
+    (opened_door door5)
+    (opened_door door6)
+    (opened_door door7)
 
     (elevator_joins elevator1 Corridor1 Corridor2)
     (elevator_joins elevator1 Corridor2 Corridor1)
@@ -73,15 +73,8 @@
 )
     (:goal 
         (and
-            ;(object_at object1 Room8)
+            (object_at object1 Room8)
             (robot_at robot Room1)
-            (robot_at robot Room2)
-            (robot_at robot Room3)
-            (robot_at robot Room4)
-            (robot_at robot Room5)
-            (robot_at robot Room6)
-            (robot_at robot Room7)
-            (robot_at robot Room8)
         )
     )
 )

@@ -31,19 +31,19 @@
                 (at start (elevator_joins ?e ?fromloc ?toloc))
             )
         :effect (and 
-            (at end (not(robot_at ?r ?fromloc)))
+            (at start (not(robot_at ?r ?fromloc)))
             (at end (robot_at ?r ?toloc))
         )
     )
 
+
     (:durative-action open_door
-        :parameters
-            (
+        :parameters(
             ?r - robot
             ?fromloc - location
             ?toloc - location
             ?d - door
-            )
+        )
         :duration 
             (= ?duration 3)
         :condition 
@@ -73,7 +73,7 @@
                 (at start (opened_door ?d))
             )
         :effect (and 
-            (at end (not(robot_at ?r ?fromloc)))
+            (at start (not(robot_at ?r ?fromloc)))
             (at end (robot_at ?r ?toloc))
         )
     )
@@ -94,7 +94,7 @@
             )
         :effect (and 
             (at end (carry_object ?r ?o))
-            (at end (not(object_at ?o ?loc)))
+            (at start (not(object_at ?o ?loc)))
 
         )
     )
@@ -114,7 +114,7 @@
                 (at start (robot_at ?r ?loc))
             )
         :effect (and 
-            (at end (not(carry_object ?r ?o)))
+            (at start (not(carry_object ?r ?o)))
             (at end (object_at ?o ?loc))
         )
     )
