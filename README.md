@@ -1,10 +1,6 @@
 # Planning_PDDL
 Hotel Planning PDDL
 
-
-# Planning_PDDL
-Hotel Planning PDDL
-
 ## Types
 -robot
 
